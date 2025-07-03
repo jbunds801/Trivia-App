@@ -1,12 +1,3 @@
-# React + Vite
+My trivia app project showcases how to pull different items from an API, and map over them to create a list that is then converted into radio buttons. It uses ID'S for categories so I had to make sure that it was able not only to look for a certain category but to match it to an ID and return the ID so it would work. I used props and passed down components from the parent to the child. Including the main.jsx and the app.jsx, there are 5 components total. I feel like with this lesson I learned more about not just props but updating the DOM as well. I did some light styling mostly with bootstrap, but later on I might consider adding more styling! I learned too that there is built in styling with React, especially for responsiveness, because I was trying to do stuff with media queries and it wasn't working! But as I tried it without media queries and it worked just how I wanted it to work just using regular CSS. I wanted to keep the UI clean and nice looking, so instead of having an error message if they didn't fill out all the fields I just put a <p> saying that all fields are required and kept the button greyed out until they do so.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Overall I am happy with how this project came out!
