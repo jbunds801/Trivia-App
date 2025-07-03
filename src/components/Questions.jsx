@@ -90,9 +90,9 @@ const Questions = ({ category, difficulty, name, onStartOver }) => {
 
     return (
         <div>
-            <h1>{decodeHTML(current.question)}</h1>
+            <h1 className='mb-5'>{decodeHTML(current.question)}</h1>
             {current.allAnswers.map((ans, idx) => (
-                <div className='mt-5 mb-3' key={idx}>
+                <div className='mt-4 mb-3' key={idx}>
                     <label className='form-label'>
                         <input className='mx-2'
                             type="radio"

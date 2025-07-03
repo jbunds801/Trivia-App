@@ -6,11 +6,9 @@ function App() {
 
 
   return (
-    <div className="trivia-card">
-      <div className="align-items-center row justify-content-center 
+    <div className="align-items-center row justify-content-center 
         mx-auto p-5 mt-4 mb-5">
-        <HomePage />
-      </div>
+      <HomePage />
     </div>
   )
 }

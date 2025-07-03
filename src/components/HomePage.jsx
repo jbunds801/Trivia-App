@@ -23,7 +23,10 @@ const HomePage = () => {
                     <div className='mb-5'>
                         <h1>Welcome to Trivia Time!</h1>
                     </div>
-                    <h5 >Enter your name</h5>
+                    <h5 >Enter your name and select from the dropdowns
+                        below to get started!
+                    </h5>
+                    <p className='fst-italic fw-light'>all fields required</p>
                     <label className='form-label'
                         htmlFor="name"></label>
                     <div className="row justify-content-center">
@@ -36,11 +39,7 @@ const HomePage = () => {
                             onChange={(e) => setName(e.target.value)}
                         />
                     </div>
-                    <div className='mt-5'>
-                        <h5>Please select from the dropdowns below and
-                            click the button to get started!</h5>
-                    </div>
-                    <div className='mt-5 mb-3'>
+                    <div className='mt-4 mb-4'>
                         <select onChange={(e) => setCategory(e.target.value)}>
                             <option value="">Select Category</option>
                             <option value="General Knowledge">General Knowledge</option>
@@ -49,8 +48,7 @@ const HomePage = () => {
                             <option value="Mythology">Mythology</option>
                         </select>
                     </div>
-                    <br />
-                    <div className='mb-3'>
+                    <div className='mb-4'>
                         <select onChange={(e) => setDifficulty(e.target.value)}>
                             <option value="">Select Difficulty</option>
                             <option value="easy">Easy</option>
@@ -59,7 +57,9 @@ const HomePage = () => {
                         </select>
                     </div>
                     <br />
-                    <button className='btn btn-dark btn-sm' onClick={() => setStart(true)}>Go!</button>
+                    <button className='btn btn-dark btn-sm' onClick={() => setStart(true)} disabled={!name || !category || !difficulty}>
+                        Go!
+                    </button>
                 </div>
             )}
 

@@ -8,7 +8,7 @@ body {
   background-color: #e7e7e7;
   display: flex;
   place-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   margin: 25px;
 }
 
@@ -16,11 +16,6 @@ body {
   background-image: linear-gradient(#00e2e2, #c7ffff, white);
   border-radius: 20px;
   box-shadow: 0px 0px 30px #808080;
-}
-
-@media (min-width: 768px) {
-  #root {
-    max-height: '600px';
-    max-width: '600px';
-  }
+  max-width: 700px;
+  max-height: fit-content;
 }
